@@ -41,6 +41,7 @@ function irpf(renda) {
 }
 
 document.querySelector("#cadastrar").addEventListener("click",function(){
+      alert("calculando...");
       let renda =document.getElementById('salario').value;
       let dep =document.querySelector("#num_dep").value;
       if (renda.length>0 && dep.length>0){
@@ -67,43 +68,12 @@ document.querySelector("#cadastrar").addEventListener("click",function(){
               window.document.writeln(desconto_total_round+'<br>');
               window.document.writeln("salario final:R$ \t");
               window.document.writeln(salario_final_round);
-
-
-
-        //alert(parseInt(renda)+parseInt(dep));
       }else{
         alert("digite os valores")
       }
   
 });
-/*
-document.querySelector(#cadastrar).addEventListener("click",function(){   
-    let renda=document.querySelector("#salario").value;
-    let dep=document.querySelector("#num_dep").value;
-    if(renda.length>0 && dep.length>0){
-        var imposto_inss=inss(renda);
-        var desconto_dep=(189.59*dep);
-        var aux1=(renda-(imposto_inss+desconto_dep));
-        var imposto_irpf=irpf(aux1);
-        window.document.writeln("Imposto inss:R$\t");
-        window.document.writeln(imposto_inss);
-        window.document.writeln("Imposto irpf:R$\t");
-        window.document.writeln(imposto_irpf);
-        window.document.writeln("desconto total=R$\t");
-        window.document.writeln(imposto_inss+imposto_irpf);
-        window.document.writeln("salario final=R$\t");
-        window.document.writeln(renda-imposto_inss-imposto_irpf);
 
-    }else{
-      	alert("digite os valores");
-    }
-	
-});
-*/
-document.getElementById("cadastrar").onsubmit= function(e){
-      e.preventDefault();
-      alert("submeter!")
-}
  
 
 
