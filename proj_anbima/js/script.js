@@ -69,7 +69,7 @@ document.querySelector("#cadastrar").addEventListener("click",function(){
               window.document.writeln("salario final:R$ \t");
               window.document.writeln(salario_final_round);
       }else{
-        alert("digite os valores")
+        alert("digite os valores");
       }
   
 });
