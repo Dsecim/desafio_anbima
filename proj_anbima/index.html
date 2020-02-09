@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<title>ambima</title>
+			<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/edit.css">
+		</head>
+		<body>
+			<header>
+				<div class="container">
+            		<img  id="logotipo" src="png/ambima.png" alt="logotipo" class="img-polaroid" >          		
+            	</div>
+				<div class="header-black">
+					<div class="container">
+            				<div class="row">
+            		          <h1>Anbima desafio <span class="badge badge-secondary">Start</span></h1>
+            				</div>
+
+
+				    </div>
+				</div>
+				<div class="container">
+				
+					<div class="row">
+						
+						<nav id="menu" class="pull-right">
+							<ul>
+								<li><a href="#">Tickets</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Schedule</a></li>
+								<li class="search">
+									<div class="input-group">
+										<input type="search" class="form-control" placeholder="search...">
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button">Go!</button>
+										</span>	
+									</div><!--/input-group -->
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>
+		
+
+			</header>
+			<section>
+				        <div id="banner">
+				        	<img id=banner src="png/banner.jpg"> 
+				        </div>
+				       
+		    </section>
+		    <footer>
+
+						<form id="cadastro" class="container my-4" method="POST" action="#">
+				             <div class="form-group">
+				                <label for="nome">Nome</label>
+				                <input type="text" name="nome" id="nome" class="form-control" size="40" placeholder="digite o seu nome" required autofocus tabindex="1" >
+				             </div>
+				             <div class="form-group">
+				                <label >Sexo</label>
+				                <input type="radio" name="sexo" id="feminino">
+				                <label>feminino</label>
+				                <input type="radio" name="sexo" id="masculino">
+				                <label>masculino</label>
+				             </div>
+				             <div class="input-group mb-3">
+								 <div class="input-group-prepend">
+								    <span class="input-group-text">$</span>
+								 </div>
+								 <input type="text" id="salario" class="form-control" aria-label="Amount (to the nearest dollar)" tabindex="2">
+								 <div class="input-group-append">
+								    <span class="input-group-text">.00</span>
+								 </div>
+							 </div>
+				             </div class="form-group">
+				                <label for="num_dep">Número de dependentes</label>
+				                <input type="number" name="num_dep" id="num_dep" min=0 max=15 value="0" class="form-control" placeholder="digite o número de dependentes" required tabindex="3">
+				             </div>
+				             <div class="form-group">
+				                <label for="li">li o contrato</label>
+				                <input type="checkbox" name="li" id="li" required checked>
+				             </div>
+				             <div>
+				                <button type="submit" id="cadastrar" class="btn btn-primary btn-outline btn-sucess">Cadastrar</button>
+				             </div>
+		            	</form>
+		    	
+		    </footer>  
+          <script src="js/script.js"></script>
+          <script src="lib/jquery/jquery.min.js"></script>
+		  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		</body>
+</html>

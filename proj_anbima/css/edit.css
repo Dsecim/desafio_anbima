@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+
+header{
+	width: 100%;
+	height: 218px;
+	background:#000280; 
+	position: relative;
+}
+header .container{
+	position: relative;
+}
+header .header-black{
+	 background:#e0c887;
+	 height: 60px;
+	 width: 100%; 
+
+}
+section {
+	background:#a2bfa1;
+	height: 390px;
+	width: 100%;
+	
+}
+header .header-black li a {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+header #logotipo {
+	position: absolute;
+	top: 60px;
+}
+footer .container{
+	background:#a2bfa1;
+	height: 400px;
+	width: 100%;
+	
+}
+footer {
+	background:#e0c887;
+}
+#menu {
+	margin-top: 100px;
+	margin-left:600px;
+}
+#menu li {
+	display: inline-block;
+	font-family: "OpenSans";
+}
+#menu li.search{
+	width: 150px;
+	background:#5a70d1; 
+
+}
+#menu li.search input{
+	background:#7686cf;
+	color:#FFF;
+	border:none; 
+}
+#menu li.search input:: -webkit-input-placeholder {
+	color:#FFF;
+}
+#menu li a {
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 25px;
+	font-weight: italic;
+}
+#banner{
+	width: 100%;
+	height: 414px;
+	position: relative;
+	background-image: url(../png/banner.jpg) no-repeat;
+
+
+}
